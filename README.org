@@ -1,0 +1,30 @@
+* Hi there!
+
+Welcome to this tutorial on Emacs and how to use org-mode as a
+literate programming or systems administration environment.
+
+** Bootstrapping
+
+You will need Emacs. But I also want to show you the package manager
+Guix, so I will have you get Emacs through Guix. Run the following
+commands in a shell.
+
+#+begin_src sh
+wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh
+chmod +x guix-install.sh
+./guix-install.sh
+#+end_src
+
+** Installing Emacs
+
+Then we start an environment with Emacs and org-mode in it.
+
+#+begin_src sh
+guix environment --ad-hoc emacs emacs-org
+#+end_src
+
+This will spawn you a new shell with ~emacs~ and ~emacs-org~ installed.
+
+** To infinity, and beyond
+
+With that done, you can now either follow along in the file
